@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Taha Khwaja</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Education/Work Experience">Education/Work Experience</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </header>
+    <section id="home">
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Personal Portfolio</h2>
+        <a href="#About" id="btn">Explore</a>
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+    ,<div class="sec" id="About"> <!--About me section-->
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio! I’m a passionate Computer Science major at the University of Texas at Dallas, 
+            honing my skills in programming and problem-solving. I have expertise in HTML, CSS, JavaScript, C++, and Python, 
+            and I use these to build innovative projects and solutions. Along with academics, I teach coding at iCode, where I guide students in exploring the exciting world of technology.
+            <br><br>
+            In my free time, I enjoy staying active through workouts, playing basketball, and immersing myself in my interests in fashion, art, and cars.
+             I also love spending time with my family, cooking, and exploring nature, which helps me stay grounded and inspired.
+             <br><br>
+             I aspire to become a software engineer or game developer, where I can apply my skills to create immersive experiences and contribute to cutting-edge technologies.
+
+
+
+    </div>
+    <div id="Education/Work Experience" class="sec">
+        <h2>Education/Work Experience</h2>
+
+        <p>University of Texas at Dallas <br>
+            <span style="font-size: 15px;">Computer Science: Graduation 2027</span><br>
+            <span style="font-size: 12px;">3.8/4.0 gpa </span> </p>
+            <p><br></p>
+
+        <p>Computer Science Instructor: Icode<br>
+        <span style="font-size: 15px;">October 2024-Present</span><br>
+        <span style="font-size: 12px";>As a Computer Science Instructor at iCode, I have the opportunity to inspire and guide students in learning the fundamentals of coding and technology. I focus on creating engaging and hands-on experiences to
+             help students develop a solid foundation in programming and problem-solving. With a passion for education and technology, I strive to make coding accessible and fun for all ages, 
+             preparing students for future success in the tech world. In detail i teach Javascript, HTML, CSS, Python,and C++ to help students build websites, video games, and program drones! </span> </p>
+            <p><br></p>
+        <p>Center Assistant: Kumon <br>
+            <span style="font-size: 15px;">Feburary 2024-October 2024</span><br>
+            <span style="font-size: 12px;">
+
+                As a Center Assistant at Kumon, I was responsible for overseeing daily operations and supporting instructors. Acting as second in charge, 
+                I managed student progress, assisted with administrative tasks, and maintained communication with parents. 
+                I also took charge of managing and troubleshooting all center technology, ensuring smooth operations. 
+                My role required strong organizational skills, attention to detail, and the ability to handle multiple tasks efficiently while creating a positive learning environment."</span> </p>
+                <p><br></p>
+        <p>Headstarter AI: Software Engineer Fellow <br>
+            <span style="font-size: 15px;">July 2024-September 2024</span><br>
+            <span style="font-size: 12px;">I was honored to be accepted into Headstarter AI as a Software Engineer Fellow, 
+                where I had the opportunity to work on a variety of exciting projects. My responsibilities included developing innovative solutions, 
+                collaborating with a talented team, and refining my coding skills. I also played a key role in preparing and conducting interview processes for new fellows, 
+                helping shape the future of the program. This experience has significantly enhanced my technical and problem-solving abilities, and deepened 
+                my passion for working with cutting-edge technology.</span> </p> 
+
+    </div>
+    <div id="Projects" class="sec">
+        <h2>Projects</h2>
+        <p>Weather App <br>
+            <span style="font-size: 15px;">I created a dynamic Weather App that allows users to view live weather updates for any city. 
+                The app fetches real-time data from a weather API and displays it using a clean, user-friendly interface built with HTML and CSS. 
+                The app shows essential weather details, including temperature, humidity, and conditions, providing an intuitive way for users to check the weather of their chosen location.<br><br></span>
+            
+            Alien Invader Game <br>
+            <span style="font-size: 15px;">I created an exciting "Alien Invaders" game using Python, leveraging the Pygame library. 
+                The game features dynamic gameplay where players defend Earth from waves of alien invaders. I focused on designing intuitive controls, smooth animations, 
+                and a challenging difficulty curve, all while refining my programming skills in Python and game development. 
+                This project was a great way to apply my knowledge of object-oriented programming and game logic.</span>
+            </p>
+
+
+    <div id="Contact" class="sec">
+        <h2>Contact Me</h2>
+        <p>Feel free to explore the links below!<br>Email: Tkwarriors35@gmail.com <br></p>
+        <div class="Socials">
+            </a>
+            <a href="https://www.linkedin.com/in/taha-khwaja-651941209/" target="_blank">
+            <img src="Linked.png" alt="Linkedin">
+            </a>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank">
+                <img src="Gmail.png" alt="Gmail">
+            </a>
+            <a href="https://www.instagram.com/taha_khwaja/" target="_blank">
+                <img src="Insta.png" alt="Instagram">
+            </a>
+            <a href="https://github.com/TahaKhwaja" target="_blank">
+                <img src="Git.png" alt="GitHub">
+            </a>
+        </div>
+
+    </div>
+    <script>
+    let stars = document.getElementById('stars')
+    let moon = document.getElementById('moon')
+    let mountains_behind = document.getElementById('mountains_behind')
+    let text = document.getElementById('text')
+    let btn = document.getElementById('btn')
+    let mountains_front = document.getElementById('mountains_front')
+    let header = document.querySelector('header');
+
+    window.addEventListener('scroll', function(){
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + 'px';
+        moon.style.top = value * 1.05 + 'px';
+        mountains_behind.style.top = value * .5 + 'px';
+        mountains_front.style.top = value * 0 + 'px';
+        text.style.marginRight = value * 4 + 'px';
+        text.style.marginTop = value * 1.5 + 'px';
+        btn.style.marginTop = value * 1.5 + 'px';
+        header.style.top = value * 0.5 +'px';
+    })
+    </script>
+</body>
+</html>
