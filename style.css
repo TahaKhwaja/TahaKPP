@@ -134,14 +134,21 @@ section img#mountains_front {
 }
 .sec h2
 {
+font-family: 'Poppins', sans-serif;   
 font-size: 3.5em;
 margin-bottom: 10px;
 color: #fff;
 }
 .sec p
 {
+    font-family: 'Poppins', sans-serif;
     font-size: 1.2em;
     color: #fff;
+}
+.project-description{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: .9em;
 }
 .Socials 
 {
